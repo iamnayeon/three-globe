@@ -1,3 +1,4 @@
+import vitePluginString from 'vite-plugin-string'
 export default {
     root: 'src/',
     publicDir: '../static/',
@@ -12,5 +13,8 @@ export default {
         outDir: '../dist',
         emptyOutDir: true,
         sourcemap: true
-    }
+    },
+    plugins: [
+        vitePluginString()
+  ]
 }
